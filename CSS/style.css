@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif, "Verdana", "Times New Roman";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navHeader {
+  background-color: black;
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo img {
+  height: 3rem;
+  width: 4rem;
+  object-fit: contain;
+  border-radius: 2rem;
+}
+
+.navbar {
+  width: 40%;
+  /* border: 1px solid yellow; */
+  position: absolute;
+  left: 15%;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.nav-item {
+  color: white;
+  padding: 5px;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.searchbar {
+  position: absolute;
+  right: 2rem;
+  display: flex;
+  flex: 1;
+}
+
+.searchbar input {
+  padding: 0.4rem;
+  width: 12rem;
+  border: none;
+  outline: none;
+}
+
+.searchbar i {
+  color: black;
+  color: white;
+  background-color: springgreen;
+  /* background-color: white; */
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+main {
+  height: 80rem;
+  /* background-color: salmon; */
+  border: 2px dashed purple;
+  margin: 1rem;
+}
+
+.slides img {
+  width: 100%;
+}
+
+.next-prev {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 2.2rem;
+  color: white;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dot {
+  height: 1rem;
+  width: 1rem;
+  position: relative;
+  color: rgba(0, 0, 0, 0.8);
+}

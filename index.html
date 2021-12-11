@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/78f298dc90.js" crossorigin="anonymous"></script>
+
+    <title>Watch Shop</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="navHeader">
+        <div class="logo">
+            <a href="#"><img src="./img/watchlogo.jpg" alt="watchlogo"></a>
+        </div>
+
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <a class="nav-item" href="#">
+                    <li>Home</li>
+                </a>
+                <a class="nav-item" href="#">
+                    <li>Brands</li>
+                </a>
+                <a class="nav-item" href="#">
+                    <li>Contact</li>
+                </a>
+                <a class="nav-item" href="#">
+                    <li>About</li>
+                </a>
+            </ul>
+        </nav>
+        <div class="searchbar">
+            <input type="text" name="search" id="search" placeholder="search here...">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+
+    <!-- Home -->
+    <div class="home">
+        <div class="slideshow">
+            <div class="slides">
+                <img src="./img/home1.jpg" alt="">
+            </div>
+            <!-- <div class="slides">
+                <img src="./img/home2.jpg" alt="">
+            </div>
+            <div class="slides">
+                <img src="./img/home3.jpg" alt="">
+            </div> -->
+
+            <!-- Next and Prev button -->
+            <div class="next-prev">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+
+    <!-- Main -->
+    <main>
+        <!-- Top Watches -->
+        <section class="top-watch"></section>
+
+        <!-- Women's watch -->
+        <section class="womens-watch"></section>
+
+        <!-- Best Seller -->
+        <section class="best-seller"></section>
+
+        <!-- Testimonials -->
+        <section class="testimonials"></section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+
+    <!-- Javascript -->
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
