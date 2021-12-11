@@ -47,20 +47,23 @@
     <!-- Home -->
     <div class="home">
         <div class="slideshow">
-            <div class="slides">
+            <div class="slides fade">
                 <img src="./img/home1.jpg" alt="">
             </div>
-            <!-- <div class="slides">
+            <div class="slides fade">
                 <img src="./img/home2.jpg" alt="">
             </div>
-            <div class="slides">
+            <div class="slides fade">
                 <img src="./img/home3.jpg" alt="">
-            </div> -->
+            </div>
+            <div class="slides fade">
+                <img src="./img/home4.jpg" alt="">
+            </div>
 
             <!-- Next and Prev button -->
             <div class="next-prev">
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
+                <a class="next" onclick="moveSlides(1)">&#10095;</a>
             </div>
         </div>
 
@@ -68,12 +71,14 @@
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
         </div>
     </div>
 
 
     <!-- Main -->
-    <main>
+    <main style="text-align: center;">
+        Main Content
         <!-- Top Watches -->
         <section class="top-watch"></section>
 
