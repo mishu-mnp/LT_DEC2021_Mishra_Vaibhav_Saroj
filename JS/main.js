@@ -19,7 +19,7 @@ function showSlides() {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 8 seconds
+    setTimeout(showSlides, 5000);
 }
 
 function moveSlides(position) {
@@ -47,4 +47,25 @@ function currentSlide(index) {
     }
     slides[index - 1].style.display = "block";
     dots[index - 1].className += " active";
+}
+
+
+
+// SLider for Best Seller
+var slideIndex = 3;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("slide__watches");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length };
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex - 1].style.display = "flex";
 }
