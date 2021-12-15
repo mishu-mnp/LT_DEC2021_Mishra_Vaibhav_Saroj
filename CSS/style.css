@@ -29,11 +29,22 @@ a {
   z-index: 10;
 }
 
+.logo {
+  align-items: center;
+  color: white;
+  display: flex;
+}
+
 .logo img {
   height: 3rem;
   width: 4rem;
   object-fit: contain;
   border-radius: 2rem;
+}
+
+.logo span {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .navbar {
@@ -80,8 +91,7 @@ a {
   cursor: pointer;
 }
 
-main {
-  height: 80rem;
+.index-main {
   /* background-color: salmon; */
   border: 2px dashed purple;
   margin: 1rem;
@@ -251,8 +261,9 @@ main {
   margin: 1rem;
   font-size: 2.5rem;
 }
+
 .slide__watches {
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   display: none;
   justify-content: space-around;
   text-align: center;
@@ -290,6 +301,58 @@ main {
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* **************** Brands ***************** */
+.brands {
+  /* border: 2px solid red; */
+  margin: 1rem;
+  background-color: #f5f5f5;
+}
+
+.brands__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.brand__company img {
+  width: 15rem;
+  height: 14rem;
+  object-fit: contain;
+  padding: 1rem;
+}
+
+.brand__slide {
+  display: none;
+  justify-content: center;
+}
+
+.bdots {
+  position: relative;
+  top: -1rem;
+  text-align: center;
+}
+
+.active,
+.bdot:hover {
+  background-color: #2b558d;
+}
+
+.bdot {
+  height: 1rem;
+  width: 1rem;
+  position: relative;
+  background-color: #ddd;
+  display: inline-block;
+  border-radius: 1rem;
+  margin: 0.2rem;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.active,
+.bdot:hover {
+  background-color: #2b558d;
 }
 
 footer {
