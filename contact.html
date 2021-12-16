@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/contact.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/78f298dc90.js" crossorigin="anonymous"></script>
+
+    <title>Watch Shop</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="navHeader">
+        <div class="logo">
+            <a href="/"><img src="./img/watchlogo.jpg" alt="watchlogo"></a>
+            <span>Y2WATCH</span>
+        </div>
+
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <a class="nav-item" href="/">
+                    <li>Home</li>
+                </a>
+                <a class="nav-item" href="#">
+                    <li>Brands</li>
+                </a>
+                <a class="nav-item" href="./contact.html">
+                    <li>Contact</li>
+                </a>
+                <a class="nav-item" href="./about.html">
+                    <li>About</li>
+                </a>
+            </ul>
+        </nav>
+        <div class="searchbar">
+            <input type="text" name="search" id="search" placeholder="search here...">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+
+
+    <div class="contact__container">
+        <div class="contact__info">
+            <h1>How can we help you?</h1>
+            <p>Feel free to reach out to us for any kind of queries and if you like our products don't forget to review
+                us. You can call us between 9:00 am to 8:00 pm for any kind of queries.</p>
+        </div>
+        <div class="contact__details">
+            <div class="email-box">
+                <i class="far fa-envelope contact-icon"></i>
+                <p class="lineOne">Email us</p>
+                <p class="lineTwo">mishu8765@gmail.com</p>
+            </div>
+            <div class="call-box">
+                <i class="fas fa-phone-volume contact-icon"></i>
+                <p class="lineOne">Call us</p>
+                <p class="lineTwo">+91 9378926874</p>
+            </div>
+            <div class="whatsApp-box">
+                <i class="fab fa-whatsapp contact-icon"></i>
+                <p class="lineOne">Whatsapp chat</p>
+                <p class="lineTwo">+91 9564725634</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <h1>Contact us</h1>
+        <form action="no-action.php">
+            <div class="userName">
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" placeholder="name">
+            </div>
+            <div class="userEmail">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="email">
+            </div>
+            <div class="userPhone">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" id="phone" placeholder="phone number">
+            </div>
+            <div class="userMessage">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="enter message"></textarea>
+            </div>
+            <div class="form__btn">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

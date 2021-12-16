@@ -355,9 +355,97 @@ a {
   background-color: #2b558d;
 }
 
+/* ****************** Footer ********************* */
 footer {
-  height: 20rem;
+  /* height: 20rem; */
   border: 2px dashed green;
   background-color: #1f1f1f;
   color: white;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+  padding: 2rem;
+  border-bottom: 2px solid #2c558d;
+}
+
+.footer__container a {
+  color: gray;
+}
+
+.footer__container a:hover {
+  color: #fafafa;
+  transition: 0.3s;
+}
+
+.company h1 {
+  /* font-size: 1rem; */
+  border-bottom: 2px solid #2c558d;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.category h1 {
+  border-bottom: 2px solid #2c558d;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.brand h1 {
+  border-bottom: 2px solid #2c558d;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.terms-and-cond h1 {
+  border-bottom: 2px solid #2c558d;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.news-letter h1 {
+  border-bottom: 2px solid #2c558d;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.letter__form {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.letter__form input {
+  outline: none;
+  border: none;
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+
+.letter__form button {
+  border: none;
+  background-color: springgreen;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.connect {
+  padding: 1rem;
+}
+
+.connect__icon {
+  margin-top: 0.5rem;
+}
+
+.connect__icon i {
+  padding-right: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.copyright {
+  display: block;
+  text-align: center;
+  padding-bottom: 1rem;
 }

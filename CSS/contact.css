@@ -1,0 +1,26 @@
+.contact__container {
+  background-color: salmon;
+  padding: 2rem;
+}
+
+.contact__info {
+  text-align: center;
+  padding: 1rem;
+}
+
+.contact__details {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.contact-icon {
+  font-size: 3rem;
+}
+
+.call-box {
+  border-left: 2px solid gray;
+  border-right: 2px solid gray;
+  width: 30%;
+}
