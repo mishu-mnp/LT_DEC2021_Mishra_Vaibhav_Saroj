@@ -1,5 +1,6 @@
 #about__banner {
-  position: relative;
+  /* position: relative; */
+  z-index: 8;
 }
 
 #about__banner::before {
