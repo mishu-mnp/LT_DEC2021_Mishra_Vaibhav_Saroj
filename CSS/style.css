@@ -91,13 +91,6 @@ a {
   cursor: pointer;
 }
 
-.index-main {
-  /* background-color: salmon; */
-  border: 2px dashed purple;
-  margin: 1rem;
-  height: 100%;
-}
-
 .slides {
   display: none;
 }
@@ -178,9 +171,16 @@ a {
   }
 }
 
+.index-main {
+  /* background-color: salmon; */
+  /* border: 2px dashed purple; */
+  margin: 1rem;
+  height: 100%;
+}
+
 /* **************** Top Watches ****************** */
 .top-watch {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   margin: 1rem;
   text-align: center;
   margin-top: 3rem;
@@ -210,13 +210,17 @@ a {
   object-fit: contain;
 }
 
+.top__watches span {
+  display: block;
+}
+
 .top__watches small {
   font-weight: bold;
 }
 
 /* ************** Women's Watch *************** */
 .womens-watch {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   margin: 1rem;
   text-align: center;
   margin-top: 3rem;
@@ -246,13 +250,17 @@ a {
   object-fit: contain;
 }
 
+.womens__watches span {
+  display: block;
+}
+
 .womens__watches small {
   font-weight: bold;
 }
 
 /* ************* Best Seller **************** */
 .best-seller {
-  border: 2px solid salmon;
+  /* border: 2px solid salmon; */
   margin: 1rem;
 }
 
@@ -276,6 +284,10 @@ a {
   object-fit: contain;
 }
 
+.best__watches span {
+  display: block;
+}
+
 .best__watches small {
   font-weight: bold;
 }
@@ -293,7 +305,7 @@ a {
   cursor: pointer;
   margin: 1rem;
   padding: 0.4rem;
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: black;
   border: none;
 }
@@ -356,9 +368,9 @@ a {
 }
 
 /* ****************** Footer ********************* */
-footer {
+.footer {
   /* height: 20rem; */
-  border: 2px dashed green;
+  /* border: 2px dashed green; */
   background-color: #1f1f1f;
   color: white;
 }
@@ -366,7 +378,7 @@ footer {
 .footer__container {
   display: flex;
   justify-content: space-between;
-  margin: 2rem;
+  /* margin: 2rem; */
   padding: 2rem;
   border-bottom: 2px solid #2c558d;
 }
@@ -448,4 +460,21 @@ footer {
   display: block;
   text-align: center;
   padding-bottom: 1rem;
+}
+
+.cmp {
+  font-size: 1.4rem;
+  padding-left: 10px;
+}
+
+/* ********************* Button *********************** */
+.buy-now {
+  border: none;
+  background-color: rgb(127, 70, 180);
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+  margin: 1.2rem;
+  font-size: 1rem;
+  /* border-radius: 16px; */
+  font-weight: 400;
 }
