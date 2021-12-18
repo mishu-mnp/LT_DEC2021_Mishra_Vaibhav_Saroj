@@ -8,6 +8,7 @@
 
 body {
   font-family: "Baloo Bhaijaan 2", cursive;
+  overflow-x: hidden;
 }
 
 ul {
@@ -21,12 +22,12 @@ a {
 .navHeader {
   background-color: black;
   display: flex;
-  height: 5rem;
   width: 100%;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 100;
+  height: 6rem;
 }
 
 .logo {
@@ -48,21 +49,31 @@ a {
 }
 
 .navbar {
-  width: 40%;
+  width: 100%;
   /* border: 1px solid yellow; */
   position: absolute;
-  left: 15%;
+  left: 15px;
+  display: flex;
+  overflow-y: scroll;
+  /* height: 0; */
+  /* min-height: 5rem; */
+}
+
+.nav__container {
+  display: flex;
 }
 
 .nav-menu {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  left: 10rem;
   /* border: 1px solid red; */
 }
 
 .nav-item {
   color: white;
-  padding: 5px;
+  padding: 0.2rem 2rem;
   font-size: 1.4rem;
   font-weight: 800;
 }
@@ -106,7 +117,7 @@ a {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 40%;
+  top: 16rem;
   width: 100%;
 }
 
@@ -171,6 +182,24 @@ a {
   }
 }
 
+.toggle-collapse {
+  position: absolute;
+  top: 0%;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+
+.toggle-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.7rem 0;
+}
+
+.toggle-icons i {
+  font-size: 2rem;
+  color: white;
+}
 .index-main {
   /* background-color: salmon; */
   /* border: 2px dashed purple; */
@@ -477,4 +506,130 @@ a {
   font-size: 1rem;
   /* border-radius: 16px; */
   font-weight: 400;
+}
+
+/* ************************ Media Queries ************************** */
+@media only screen and (max-width: 750px) {
+  .nav-menu {
+    flex-direction: column;
+  }
+
+  .searchbar,
+  .navbar {
+    top: 15rem;
+    right: 10rem;
+    display: none;
+  }
+
+  .toggle-collapse {
+    display: initial;
+  }
+
+  .nav__container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .top__watches {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  .womens__watches {
+    width: 100%;
+  }
+
+  .womens__watches img {
+    width: 12rem;
+    height: 10rem;
+  }
+
+  .best__watches {
+    padding: 1rem;
+  }
+
+  .best__watches img {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .best__watches p {
+    font-size: 10px;
+  }
+
+  .best__watches span {
+    font-size: 15px;
+  }
+
+  .next-prev {
+    top: 8rem;
+  }
+
+  .next,
+  .prev {
+    font-size: 1.5rem;
+  }
+
+  .dots {
+    bottom: 2.5rem;
+  }
+
+  .dot {
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+
+  .brands {
+    margin: 0;
+  }
+
+  .brand__company img {
+    width: 6rem;
+    height: 4rem;
+  }
+
+  .bdots {
+    top: 0;
+  }
+
+  .bdot {
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+
+  .index-main {
+    margin: 0;
+  }
+
+  .buy-now {
+    padding: 0.5rem;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .best__watches {
+    padding: 0.5rem;
+  }
+
+  .best__watches img {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .best__watches p {
+    font-size: 9px;
+  }
+
+  .best__watches button {
+    padding: 0.3rem;
+    font-size: 8px;
+  }
+
+  .brand__company img {
+    height: 4rem;
+    width: 4rem;
+    padding: 0.4rem;
+  }
 }

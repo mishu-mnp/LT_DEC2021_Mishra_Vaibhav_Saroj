@@ -18,33 +18,44 @@
 <body>
     <!-- Header -->
     <header class="navHeader">
-        <a href="/">
-            <div class="logo">
-                <img src="./img/watchlogo.jpg" alt="watchlogo">
-                <span>Y2WATCH</span>
-            </div>
-        </a>
-
         <nav class="navbar">
-            <ul class="nav-menu">
-                <a class="nav-item" href="/">
-                    <li>Home</li>
+            <div class="nav__container">
+                <a href="/">
+                    <div class="logo">
+                        <img src="./img/watchlogo.jpg" alt="watchlogo">
+                        <span>Y2WATCH</span>
+                    </div>
                 </a>
-                <a class="nav-item" href="./brands.html">
-                    <li>Brands</li>
-                </a>
-                <a class="nav-item" href="./contact.html">
-                    <li>Contact</li>
-                </a>
-                <a class="nav-item" href="./about.html">
-                    <li>About</li>
-                </a>
-            </ul>
+
+                <div class="toggle-collapse" onclick=toggleBar()>
+                    <div class="toggle-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+
+
+                <ul class="nav-menu">
+                    <a class="nav-item" href="/">
+                        <li>Home</li>
+                    </a>
+                    <a class="nav-item" href="./brands.html">
+                        <li>Brands</li>
+                    </a>
+                    <a class="nav-item" href="./contact.html">
+                        <li>Contact</li>
+                    </a>
+                    <a class="nav-item" href="./about.html">
+                        <li>About</li>
+                    </a>
+                </ul>
+
+
+                <div class="searchbar">
+                    <input type="text" name="search" id="search" placeholder="search here...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
         </nav>
-        <div class="searchbar">
-            <input type="text" name="search" id="search" placeholder="search here...">
-            <i class="fas fa-search"></i>
-        </div>
     </header>
 
     <!-- Home -->

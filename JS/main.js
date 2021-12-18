@@ -107,3 +107,17 @@ function currentBSlide(index) {
     bSlides[index - 1].style.display = "flex";
     bDots[index - 1].className += " active";
 }
+
+// Navbar Toggler
+const toggleBar = () => {
+
+    var toggleMenu = document.getElementsByClassName('navHeader')[0];
+    console.log(toggleMenu.style.height)
+
+    if (toggleMenu.style.height == '6rem') {
+        toggleMenu.style.height = '20rem'
+    } else {
+        toggleMenu.style.height = '6rem'
+    }
+
+}
