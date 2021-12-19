@@ -119,5 +119,7 @@ const toggleBar = () => {
     } else {
         toggleMenu.style.height = '6rem'
     }
-
 }
+
+
+

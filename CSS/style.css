@@ -19,91 +19,64 @@ a {
   text-decoration: none;
 }
 
-.navHeader {
+/* ************************** Navbar ************************* */
+nav {
+  height: 82px;
+  width: 100%;
   background-color: black;
-  display: flex;
-  width: 100%;
-  align-items: center;
   position: sticky;
-  top: 0;
-  z-index: 100;
-  height: 6rem;
+  z-index: 500;
 }
 
-.logo {
-  align-items: center;
-  color: white;
-  display: flex;
-}
-
-.logo img {
-  height: 3rem;
-  width: 4rem;
-  object-fit: contain;
-  border-radius: 2rem;
-}
-
-.logo span {
-  font-size: 1.2rem;
+.logo a {
+  font-size: 35px;
   font-weight: bold;
-}
-
-.navbar {
-  width: 100%;
-  /* border: 1px solid yellow; */
-  position: absolute;
-  left: 15px;
-  display: flex;
-  overflow-y: scroll;
-  /* height: 0; */
-  /* min-height: 5rem; */
-}
-
-.nav__container {
-  display: flex;
-}
-
-.nav-menu {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  left: 10rem;
-  /* border: 1px solid red; */
-}
-
-.nav-item {
   color: white;
-  padding: 0.2rem 2rem;
-  font-size: 1.4rem;
-  font-weight: 800;
+  padding: 0 100px;
+  line-height: 80px;
 }
 
-.searchbar {
-  position: absolute;
-  right: 2rem;
-  display: flex;
-  flex: 1;
+nav ul {
+  float: right;
+  margin-right: 40px;
 }
 
-.searchbar input {
-  padding: 0.4rem;
-  width: 12rem;
-  border: none;
-  outline: none;
-  height: 2.5rem;
+nav li {
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
 }
 
-.searchbar i {
-  color: black;
+nav a {
   color: white;
-  background-color: springgreen;
-  /* background-color: white; */
-  padding: 0.7rem;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+
+a.active,
+.nav-menu a:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  transition: 0.5s;
+}
+
+nav #bar-icon {
+  color: white;
   cursor: pointer;
+  font-size: 30px;
+  line-height: 80px;
+  float: right;
+  margin-right: 40px;
+  display: none;
 }
 
+/* ************************** Slider ************************* */
 .slides {
   display: none;
+  z-index: -1;
 }
 
 .slides img {
@@ -182,29 +155,12 @@ a {
   }
 }
 
-.toggle-collapse {
-  position: absolute;
-  top: 0%;
-  width: 90%;
-  cursor: pointer;
-  display: none;
-}
-
-.toggle-icons {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0.7rem 0;
-}
-
-.toggle-icons i {
-  font-size: 2rem;
-  color: white;
-}
 .index-main {
   /* background-color: salmon; */
   /* border: 2px dashed purple; */
   margin: 1rem;
-  height: 100%;
+  /* height: 100%; */
+  z-index: 1200;
 }
 
 /* **************** Top Watches ****************** */
@@ -227,10 +183,13 @@ a {
 }
 
 .top__watches {
-  width: 25%;
+  width: 24%;
   /* border: 2px dashed green; */
   text-align: center;
   margin-top: 2rem;
+  padding: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .top__watches img {
@@ -271,6 +230,9 @@ a {
   /* border: 2px dashed green; */
   text-align: center;
   margin-top: 2rem;
+  padding: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .womens__watches img {
@@ -305,12 +267,20 @@ a {
   justify-content: space-around;
   text-align: center;
   margin: 2rem;
+  padding: 1rem;
 }
 
 .slide__watches img {
   width: 10rem;
   height: 16rem;
   object-fit: contain;
+}
+
+.best__watches {
+  margin: 2rem;
+  padding: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .best__watches span {
@@ -329,8 +299,8 @@ a {
   justify-content: center;
 }
 
-.prev,
-.next {
+.best-seller__container .next-prev-btn .prev,
+.best-seller__container .next-prev-btn .next {
   cursor: pointer;
   margin: 1rem;
   padding: 0.4rem;
@@ -362,6 +332,12 @@ a {
   height: 14rem;
   object-fit: contain;
   padding: 1rem;
+}
+
+.brand__company {
+  margin: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .brand__slide {
@@ -510,8 +486,70 @@ a {
 }
 
 /* ************************ Media Queries ************************** */
+@media only screen and (max-width: 1048px) {
+  label .logo {
+    font-size: 32px;
+    padding-left: 60px;
+  }
+
+  nav ul {
+    margin-right: 20px;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  nav #bar-icon {
+    display: block;
+  }
+
+  nav ul {
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    background-color: rgb(27, 22, 22);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav li {
+    display: block;
+    margin: 25px 0;
+    line-height: 30px;
+  }
+
+  nav a {
+    font-size: 20px;
+  }
+
+  a.active,
+  .nav-menu a:hover {
+    border: none;
+    color: gray;
+  }
+
+  nav ul.show {
+    left: 0;
+  }
+
+  .prev,
+  .next {
+    padding: 0.3rem;
+  }
+
+  .next-prev {
+    top: 10rem;
+  }
+}
+
 @media only screen and (max-width: 750px) {
   .nav-menu {
+    display: flex;
     flex-direction: column;
   }
 
@@ -552,11 +590,12 @@ a {
 
   .best__watches {
     padding: 0.5rem;
+    margin: 0.5rem;
   }
 
   .best__watches img {
-    height: 7rem;
-    width: 7rem;
+    height: 5rem;
+    width: 6rem;
   }
 
   .best__watches p {
@@ -568,12 +607,12 @@ a {
   }
 
   .next-prev {
-    top: 8rem;
+    top: 6rem;
   }
 
   .next,
   .prev {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .dots {
@@ -589,8 +628,12 @@ a {
     margin: 0;
   }
 
+  .brand__company {
+    margin: 0.3rem;
+  }
+
   .brand__company img {
-    width: 6rem;
+    width: 5rem;
     height: 4rem;
   }
 
@@ -608,8 +651,8 @@ a {
   }
 
   .buy-now {
-    padding: 0.5rem;
-    font-size: 12px;
+    padding: 0.4rem;
+    font-size: 10px;
   }
 
   .footer__container {
@@ -631,6 +674,10 @@ a {
   .letter__form input {
     padding: 0.2rem;
     font-size: 0.8rem;
+  }
+
+  .logo a {
+    padding: 0 40px;
   }
 }
 
@@ -661,5 +708,39 @@ a {
     height: 4rem;
     width: 4rem;
     padding: 0.4rem;
+  }
+
+  .logo a {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .slide__watches img {
+    width: 7rem;
+    height: 11rem;
+  }
+
+  .brand__company img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .bdots {
+    top: 0;
+  }
+
+  .bdot {
+    height: 0.6rem;
+    width: 0.6rem;
+  }
+
+  .top__watches {
+    width: 32%;
+  }
+
+  .buy-now {
+    padding: 0.5rem;
+    font-size: 0.8rem;
   }
 }

@@ -15,7 +15,10 @@
   width: 28%;
   /* border: 2px dashed green; */
   text-align: center;
-  margin-top: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .brand-watch-item img {
@@ -44,42 +47,64 @@
 }
 
 /* ******************** Media Queries ********************** */
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 400px) {
   .brand__container {
     flex-direction: column;
   }
 
   .brand-watch-item {
     width: auto;
-    margin: 0;
+    margin: 0.5rem;
   }
 
   .brand-watch-item img {
     height: 12rem;
   }
+
+  .brand__watches {
+    margin: 1rem;
+  }
 }
 
-@media only screen and (min-width: 390px) {
+@media only screen and (min-width: 400px) {
   .brand-watch-item {
     width: 40%;
   }
 
   .brand-watch-item img {
-    height: 10rem;
+    height: 7rem;
   }
 
   .brand-watch-item button {
     padding: 0.5rem 1rem;
     margin: 0.2rem;
   }
+
+  .brand__watches {
+    margin: 1rem;
+  }
 }
 
 @media only screen and (min-width: 700px) {
   .brand-watch-item {
-    width: 30%;
+    width: 28%;
   }
 
   .brand-watch-item img {
     height: 10rem;
+  }
+
+  .brand__watches {
+    margin: 1rem;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+  .brand-watch-item {
+    width: 41%;
+  }
+
+  .brand__watches {
+    margin: 1rem;
   }
 }

@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="./JS/Jquery3.6.0.min.js"></script>
+
+
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/style.css">
 
@@ -16,49 +19,20 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <!-- <header class="navHeader">
-        <nav class="navbar">
-            <div class="nav__container">
-                <a href="/">
-                    <div class="logo">
-                        <img src="./img/watchlogo.jpg" alt="watchlogo">
-                        <span>Y2WATCH</span>
-                    </div>
-                </a>
-
-                <div class="toggle-collapse" onclick=toggleBar()>
-                    <div class="toggle-icons">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </div>
-
-
-                <ul class="nav-menu">
-                    <a class="nav-item" href="/">
-                        <li>Home</li>
-                    </a>
-                    <a class="nav-item" href="./brands.html">
-                        <li>Brands</li>
-                    </a>
-                    <a class="nav-item" href="./contact.html">
-                        <li>Contact</li>
-                    </a>
-                    <a class="nav-item" href="./about.html">
-                        <li>About</li>
-                    </a>
-                </ul>
-
-
-                <div class="searchbar">
-                    <input type="text" name="search" id="search" placeholder="search here...">
-                    <i class="fas fa-search"></i>
-                </div>
-            </div>
-        </nav>
-    </header> -->
-
     <!-- ************* Navbar *************** -->
+    <nav>
+        <label class="logo"><a href="/">Y2WATCH</a></label>
+        <ul class="nav-menu">
+            <li><a class="active" href="/">Home</a></li>
+            <li><a href="/brands.html">Brands</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <label id="bar-icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+
     <!-- Home -->
     <div class="home">
         <div class="slideshow">
@@ -362,6 +336,11 @@
     </footer>
 
     <!-- Javascript -->
+    <!-- Jquery file -->
+    <script src="./JS/jqueryfile.js"></script>
+
+
+    <!-- Custom Js -->
     <script src="./JS/main.js"></script>
 </body>
 
