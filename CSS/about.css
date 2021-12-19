@@ -28,20 +28,20 @@
 .aboutBanner__text {
   text-align: center;
   position: absolute;
-  left: 6rem;
+  left: 3rem;
   top: 18rem;
 }
-
+/* 
 .about__container {
   position: absolute;
   top: 36rem;
   /* border: 2px dashed red; */
-  margin: 2rem;
+/* margin: 2rem;
   display: flex;
   flex-direction: column;
-  z-index: 15;
-}
+  z-index: 15; */
 
+/* 
 .inception {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -81,8 +81,112 @@
 
 .service__content {
   padding: 2rem;
+} */
+
+/* ********************* *******************  */
+.about__container {
+  position: relative;
+  top: 30rem;
+  border: 2px solid purple;
+  padding: 2rem;
+  text-align: center;
 }
 
+.about-item {
+  /* margin: 2rem; */
+  padding: 2rem;
+}
+
+.about-item img {
+  height: 16rem;
+  width: 28rem;
+  object-fit: contain;
+  padding: 1rem;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* .retailer {
+  height: 20rem;
+  border: 2px solid blue;
+}
+
+.about-item p {
+  width: 60%;
+}
+
+.inception p {
+  width: 100%;
+}
+
+.about-item h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.service {
+  height: 20rem;
+  border: 2px solid blue;
+} */
+
 .footer {
-  margin-top: 100rem;
+  margin-top: 35rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutBanner__text {
+    left: 0.5rem;
+    top: 9rem;
+  }
+
+  #about__banner::before {
+    height: 14rem;
+  }
+
+  .aboutBanner__text span {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .aboutBanner__text h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .about__container {
+    top: 14rem;
+    padding: 0;
+    text-align: unset;
+  }
+
+  .about-item h2 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .about-item img {
+    height: 9rem;
+  }
+
+  .footer {
+    margin-top: 16rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .aboutBanner__text {
+    left: 3rem;
+    top: 21rem;
+  }
+
+  .aboutBanner__text h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .aboutBanner__text span {
+    font-size: 2rem;
+    font-weight: 800;
+  }
 }
