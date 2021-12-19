@@ -108,7 +108,7 @@ a {
 
 .slides img {
   width: 100%;
-  max-width: 1349px;
+  /* max-width: 1349px; */
   max-height: 468px;
   object-fit: cover;
 }
@@ -410,6 +410,7 @@ a {
   /* margin: 2rem; */
   padding: 2rem;
   border-bottom: 2px solid #2c558d;
+  flex-wrap: wrap;
 }
 
 .footer__container a {
@@ -493,7 +494,7 @@ a {
 
 .cmp {
   font-size: 1.4rem;
-  padding-left: 10px;
+  padding-left: 2px;
 }
 
 /* ********************* Button *********************** */
@@ -531,6 +532,10 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+  .slides img {
+    height: 8rem;
+  }
+
   .top__watches {
     width: 100%;
     margin: 1rem;
@@ -546,7 +551,7 @@ a {
   }
 
   .best__watches {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .best__watches img {
@@ -606,9 +611,34 @@ a {
     padding: 0.5rem;
     font-size: 12px;
   }
+
+  .footer__container {
+    flex-wrap: wrap;
+  }
+
+  .footer__content-div h1 {
+    font-size: 1rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+  }
+
+  .cmp {
+    font-size: 1.2rem;
+  }
+
+  .letter__form input {
+    padding: 0.2rem;
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (max-width: 300px) {
+  .slides img {
+    height: 7rem;
+  }
+
   .best__watches {
     padding: 0.5rem;
   }

@@ -103,3 +103,43 @@
     transform: scale(1.5);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .contact__container {
+    padding: 0;
+  }
+
+  .contact__details {
+    flex-direction: column;
+  }
+
+  .contact__details > div {
+    margin: 1.5rem;
+  }
+
+  .contact__info {
+    padding: 0.8rem;
+  }
+
+  .contact__info h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact__info p {
+    margin-top: 1rem;
+  }
+
+  .contact-icon {
+    font-size: 1.5rem;
+  }
+
+  .call-box {
+    border: none;
+    width: auto;
+  }
+
+  .lineOne {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+}

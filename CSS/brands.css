@@ -42,3 +42,44 @@
   /* border-radius: 16px; */
   font-weight: 400;
 }
+
+/* ******************** Media Queries ********************** */
+@media only screen and (max-width: 390px) {
+  .brand__container {
+    flex-direction: column;
+  }
+
+  .brand-watch-item {
+    width: auto;
+    margin: 0;
+  }
+
+  .brand-watch-item img {
+    height: 12rem;
+  }
+}
+
+@media only screen and (min-width: 390px) {
+  .brand-watch-item {
+    width: 40%;
+  }
+
+  .brand-watch-item img {
+    height: 10rem;
+  }
+
+  .brand-watch-item button {
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .brand-watch-item {
+    width: 30%;
+  }
+
+  .brand-watch-item img {
+    height: 10rem;
+  }
+}
