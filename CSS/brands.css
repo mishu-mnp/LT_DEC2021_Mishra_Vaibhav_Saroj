@@ -37,12 +37,12 @@
 
 .brand-watch-item button {
   border: none;
-  background-color: rgb(127, 70, 180);
+  background: #13c7d5;
   padding: 0.6rem 1.5rem;
   cursor: pointer;
   margin: 1.2rem;
   font-size: 1rem;
-  /* border-radius: 16px; */
+  border-radius: 16px;
   font-weight: 400;
 }
 
