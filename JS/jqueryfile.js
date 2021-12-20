@@ -2,5 +2,5 @@
 $(document).ready(function () {
     $('#bar-icon').click(function () {
         $('ul').toggleClass('show')
-    })
+    });
 })

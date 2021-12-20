@@ -102,7 +102,7 @@ function currentBSlide(index) {
         bSlides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-        bDots[i].className = bDots[i].className.replace(" active", "");
+        bDots[i].className = bDots[i].className.replace("active", "");
     }
     bSlides[index - 1].style.display = "flex";
     bDots[index - 1].className += " active";

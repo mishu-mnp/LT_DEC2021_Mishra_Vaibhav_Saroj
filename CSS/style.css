@@ -527,7 +527,7 @@ nav #bar-icon {
     font-size: 20px;
   }
 
-  a.active,
+  .active,
   .nav-menu a:hover {
     border: none;
     color: gray;
